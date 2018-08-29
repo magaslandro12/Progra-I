@@ -12,7 +12,7 @@ juego!
 
 
 
-
+int delay (int);
 
 void initialize_world (void);
 int get_world_width (void);
@@ -33,4 +33,25 @@ int main(void)
 }
 
 
-int ()
+
+
+
+
+int delay(int time)
+{
+
+	do
+	{
+		for(int i=15000;i>0;i--)
+		{
+			for(int i=20000;i>0;i--)
+			{
+
+			}
+		}	
+	time--;
+	}while(time>0);
+	return 0;
+}
+
+
