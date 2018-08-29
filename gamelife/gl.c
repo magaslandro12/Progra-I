@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
-
-
+#define FILA 13
+#define COLUMNA 13
+#define DEAD 'X'
 
 /*
 * Life Game
@@ -27,17 +28,4 @@ void output_world (void);
 
 int main(void)
 {
-	int mapa[13][13];
-
-
-}
-
-
-
-int get_status(int mapa[x][y])
-{
-	mapa[x][y];
-
-}
-
 
