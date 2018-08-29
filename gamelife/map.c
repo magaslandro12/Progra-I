@@ -2,6 +2,8 @@
 #include<stdlib.h>
 
 
+#define VIVE	'O'
+#define	MUERE	'x'
 
 /*
 * Life Game
@@ -27,17 +29,43 @@ void output_world (void);
 
 int main(void)
 {
-	int mapa[13][13];
+	char mapa[13][13];
+
+	for(int y=0;y<13;y++)
+	{
+		for(int x=0;x<13;x++)
+		{
+			if(x==y)
+			{
+				mapa[x][y]=VIVE;
+			}else{mapa[x][y]=MUERE;}
+
+		}
+	}
 
 
+
+
+
+	for(int y=0;y<13;y++)
+	{
+		for(int x=0;x<13;x++)
+		{
+			printf(" %c",mapa[x][y]);
+
+		}
+		printf("\n");
+	}
+
+	return 0;
 }
 
+/*
 
-
-int get_status(int mapa[x][y])
+int get_status(int mapa[][])
 {
 	mapa[x][y];
 
 }
-
+*/
 
